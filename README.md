@@ -50,4 +50,4 @@
 ```
 
 ### usage example:
-`./wavtogg revert -i "C:\bms\bofxv\song" -r -o -l log.txt`
+`./wavtogg revert -i "C:\bms\bofxv" -r -o -l log.txt`
