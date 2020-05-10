@@ -10,6 +10,8 @@
 
 -i, --input        Required. Path to the folder containing the .wav files. e.g: "C:\bms\bofxv\song"
 
+--adpcm-only       If specified, only ADPCM encoded files will be converted.
+
 -r, --recursive    Allows traversing through the input folder recursively.
 
 -o, --overwrite    Allows overwrite, if .wav equivalents already exist in the input folder. Those cases are skipped by default.

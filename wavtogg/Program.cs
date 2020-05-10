@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using CommandLine;
+using MediaInfo;
 
 namespace wavtogg
 {
@@ -40,6 +41,17 @@ namespace wavtogg
                 foreach (string wavPath in Directory.EnumerateFiles(folder, "*.wav"))
                 {
                     Trace.Write($"Converting \"{wavPath}\"... ");
+
+                    if (options.AdpcmOnly)
+                    {
+                        var mediaInfo = new MediaInfoWrapper(wavPath);
+
+                        if (!string.Equals(mediaInfo.AudioCodec, "ADPCM", StringComparison.OrdinalIgnoreCase))
+                        {
+                            Trace.WriteLine("Skipped. Not ADPCM encoded.");
+                            continue;
+                        }
+                    }
 
                     string oggPath = Path.ChangeExtension(wavPath, ".ogg");
                     if (File.Exists(oggPath) && !options.AllowOverwrite)

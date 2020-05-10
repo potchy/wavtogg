@@ -29,6 +29,12 @@ namespace wavtogg
         public string InputPath { get; set; }
 
         [Option(
+            "adpcm-only",
+            HelpText = "If specified, only ADPCM encoded files will be converted."
+        )]
+        public bool AdpcmOnly { get; set; }
+
+        [Option(
             'r',
             "recursive",
             HelpText = "Allows traversing through the input folder recursively."
