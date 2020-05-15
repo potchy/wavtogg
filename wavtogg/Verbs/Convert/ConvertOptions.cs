@@ -1,9 +1,10 @@
 ﻿using CommandLine;
+using wavtogg.Logging;
 
-namespace wavtogg
+namespace wavtogg.Verbs.Convert
 {
     [Verb("convert", HelpText = "Converts all .wav files in a folder to .ogg.")]
-    public class ConvertOptions
+    public class ConvertOptions : ILoggerOptions
     {
         [Option(
             "ffmpeg",

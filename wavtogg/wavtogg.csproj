@@ -51,10 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConvertOptions.cs" />
+    <Compile Include="Verbs\Convert\ConvertImpl.cs" />
+    <Compile Include="Verbs\Convert\ConvertOptions.cs" />
+    <Compile Include="Logging\ILoggerOptions.cs" />
+    <Compile Include="Logging\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RevertOptions.cs" />
+    <Compile Include="Verbs\Revert\RevertImpl.cs" />
+    <Compile Include="Verbs\Revert\RevertOptions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

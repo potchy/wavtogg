@@ -1,9 +1,10 @@
 ﻿using CommandLine;
+using wavtogg.Logging;
 
-namespace wavtogg
+namespace wavtogg.Verbs.Revert
 {
     [Verb("revert", HelpText = "Restore all backed up .wav files in a folder.")]
-    public class RevertOptions
+    public class RevertOptions : ILoggerOptions
     {
         [Option(
             'i',
