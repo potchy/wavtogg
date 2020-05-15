@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using MediaInfo;
 using wavtogg.Logging;
+using wavtogg.Utils;
 
 namespace wavtogg.Verbs.Convert
 {
@@ -31,15 +31,10 @@ namespace wavtogg.Verbs.Convert
                 {
                     logger.Start("Converting", wavPath);
 
-                    if (_options.AdpcmOnly)
+                    if (_options.AdpcmOnly && !WavUtils.IsAdpcm(wavPath))
                     {
-                        var mediaInfo = new MediaInfoWrapper(wavPath);
-
-                        if (!string.Equals(mediaInfo.AudioCodec, "ADPCM", StringComparison.OrdinalIgnoreCase))
-                        {
-                            logger.Skip("Not ADPCM encoded.");
-                            continue;
-                        }
+                        logger.Skip("Not ADPCM encoded.");
+                        continue;
                     }
 
                     string oggPath = Path.ChangeExtension(wavPath, ".ogg");

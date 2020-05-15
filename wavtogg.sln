@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wavtogg", "wavtogg\wavtogg.csproj", "{5AFFA553-8706-46AA-A168-42425EE28EDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wavtogg.Tests", "wavtogg.Tests\wavtogg.Tests.csproj", "{28541EF7-F5A2-4017-8177-29BC2061CC12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wavtogg.Analyzer", "wavtogg.Analyzer\wavtogg.Analyzer.csproj", "{407FB3EF-A157-44C0-874B-CC70D203A170}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5AFFA553-8706-46AA-A168-42425EE28EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AFFA553-8706-46AA-A168-42425EE28EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AFFA553-8706-46AA-A168-42425EE28EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28541EF7-F5A2-4017-8177-29BC2061CC12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28541EF7-F5A2-4017-8177-29BC2061CC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28541EF7-F5A2-4017-8177-29BC2061CC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28541EF7-F5A2-4017-8177-29BC2061CC12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407FB3EF-A157-44C0-874B-CC70D203A170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407FB3EF-A157-44C0-874B-CC70D203A170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407FB3EF-A157-44C0-874B-CC70D203A170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407FB3EF-A157-44C0-874B-CC70D203A170}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
