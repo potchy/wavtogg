@@ -14,7 +14,7 @@
 
 -r, --recursive    Allows traversing through the input folder recursively.
 
--o, --overwrite    Allows overwrite, if .wav equivalents already exist in the input folder. Those cases are skipped by default.
+-o, --overwrite    Allows overwrite, if .ogg equivalents already exist in the input folder. Those cases are skipped by default.
 
 -b, --backup       (Default: wavtogg_backup) Backup folder name. Folders with this name are automatically excluded from the conversion process.
 

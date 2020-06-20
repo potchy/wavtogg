@@ -45,7 +45,7 @@ namespace wavtogg.Verbs.Convert
         [Option(
             'o',
             "overwrite",
-            HelpText = "Allows overwrite, if .wav equivalents already exist in the input folder. Those cases are skipped by default."
+            HelpText = "Allows overwrite, if .ogg equivalents already exist in the input folder. Those cases are skipped by default."
         )]
         public bool AllowOverwrite { get; set; }
 
