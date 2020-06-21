@@ -61,7 +61,7 @@ namespace wavtogg.Verbs.Convert
         [Option(
             "no-backup",
             SetName = "no-backup",
-            HelpText = "Disables backup."
+            HelpText = "Disables backup. Warning: this will DELETE your original .wav files after the conversion to .ogg is completed. Recovery will be impossible afterwards."
         )]
         public bool DoNotBackup { get; set; }
 

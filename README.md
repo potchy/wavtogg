@@ -18,7 +18,7 @@
 
 -b, --backup       (Default: wavtogg_backup) Backup folder name. Folders with this name are automatically excluded from the conversion process.
 
---no-backup        Disables backup.
+--no-backup        Disables backup. Warning: this will DELETE your original .wav files after the conversion to .ogg is completed. Recovery will be impossible afterwards.
 
 -l, --log          Path to the log file to be written to.
 
