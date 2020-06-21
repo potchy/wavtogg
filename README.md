@@ -28,7 +28,7 @@
 ```
 
 ### usage example:
-`./wavtogg convert --ffmpeg "C:\ffmpeg\bin\ffmpeg.exe" -i "C:\bms\bofxv" -r -o -l log.txt`
+`./wavtogg convert --ffmpeg "C:\ffmpeg\bin\ffmpeg.exe" -i "C:\bms\bofxv" -r -l log.txt`
 
 ## revert
 
@@ -52,4 +52,4 @@
 ```
 
 ### usage example:
-`./wavtogg revert -i "C:\bms\bofxv" -r -o -l log.txt`
+`./wavtogg revert -i "C:\bms\bofxv" -r -l log.txt`
