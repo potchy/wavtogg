@@ -1,6 +1,6 @@
 # wavtogg
 
-.wav to .ogg bulk converter with encoding filters and backup support. Windows only.
+.wav to .ogg bulk converter with encoding filters and backup support. Requires FFmpeg. Windows only.
 
 ## convert
 
