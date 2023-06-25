@@ -29,8 +29,8 @@
 --version          Display version information.
 ```
 
-### usage example:
-`wavtogg convert --ffmpeg "C:\ffmpeg\bin\ffmpeg.exe" -i "C:\bms\bofxv" -r -l log.txt`
+### usage example (PowerShell):
+`.\wavtogg.exe convert --ffmpeg "C:\ffmpeg\bin\ffmpeg.exe" -i "C:\bms\bofxv" -r -l log.txt`
 
 ## revert
 
@@ -53,5 +53,5 @@
 --version          Display version information.
 ```
 
-### usage example:
-`wavtogg revert -i "C:\bms\bofxv" -r -l log.txt`
+### usage example (PowerShell):
+`.\wavtogg.exe revert -i "C:\bms\bofxv" -r -l log.txt`
